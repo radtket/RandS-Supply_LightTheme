@@ -1,5 +1,6 @@
 /*  Load plugins
-    ************************* */
+ ************************* */
+
 import autoprefixer from 'gulp-autoprefixer';
 import babel from 'gulp-babel';
 import browserSync from 'browser-sync';
@@ -18,7 +19,7 @@ import uglify from 'gulp-uglify';
 const { reload } = browserSync;
 
 /*  Clean the /dist directory (gulp clean)
-  ************************* */
+ ************************* */
 gulp.task('clean', () => del(['dist']));
 
 /*  Copy specific files to dist (gulp copy)
@@ -61,7 +62,7 @@ gulp.task('styles', () =>
 );
 
 /*  Concat and Minify JS Dependencies (gulp js-dep)
-  ************************* */
+ ************************* */
 gulp.task('js-dep', () => {
 	// Put any node_modules dependencies (JS) here
 	const files = ['node_modules/jquery/dist/jquery.js'];
@@ -74,7 +75,7 @@ gulp.task('js-dep', () => {
 });
 
 /*  Concat and Minify Custom JS (gulp js)
-  ************************* */
+ ************************* */
 gulp.task('js', () =>
 	gulp
 		.src('src/assets/js/**/*.js')
@@ -85,7 +86,7 @@ gulp.task('js', () =>
 );
 
 /*  Minify HTML (gulp html)
-  ************************* */
+ ************************* */
 gulp.task('html', () =>
 	gulp
 		.src('src/*.html')
