@@ -1,0 +1,39 @@
+.footer {
+	background-color: $color-blue-d;
+	margin-top: 70px;
+	text-align: center;
+
+	figure {
+		height: 70px;
+
+		svg {
+			max-height: 100%;
+			max-width: 100%;
+		}
+	}
+
+	.footer-company-name {
+		color: $medium-gray;
+		font-size: 14px;
+		margin: 0;
+	}
+
+	.footer-links {
+		@include padding($base-spacing null $small-spacing);
+		font-weight: bold;
+
+		a {
+			color: $color-white;
+			display: inline-block;
+			margin-right: $base-spacing;
+
+			&:last-child {
+				margin-right: 0;
+			}
+
+			&:hover {
+				color: $color-red-l;
+			}
+		}
+	}
+}

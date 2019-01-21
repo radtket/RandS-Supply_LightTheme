@@ -23,9 +23,6 @@ linters:
   LeadingZero:
     enabled: false
 
-  NameFormat:
-    enabled: true
-
   PrivateNamingConvention:
     enabled: true
     prefix: _
@@ -54,4 +51,10 @@ linters:
     max_depth: 4
 
   NestingDepth:
+    enabled: false
+
+  ColorVariable:
+     enabled: false
+
+  NameFormat:
     enabled: false
